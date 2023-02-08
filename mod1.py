@@ -11,7 +11,8 @@ w5, w7=.40, .50
 w6, w8=.45, .55
 b3, b4=.60, .60
 
-a=int(input('테스트횟수:'))
+a=int(input('Test N:'))
+b=int(input('LearningRate:'))
 
 for epoch in range(a):
   print('------------------')
@@ -50,7 +51,7 @@ for epoch in range(a):
   w6b, w8b= h2*o1b, h2*o2b
   b3b, b4b=1*o1b, 1*o2b
 
-  lr=0.01
+  lr=b
   w1, w3=w1-lr*w1b, w3-lr*w3b
   w2, w4=w2-lr*w2b, w4-lr*w4b
   b1, b2=b1-lr*b1b, b2-lr*b2b
