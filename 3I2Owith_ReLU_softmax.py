@@ -11,6 +11,9 @@ w5, w7=.40, .50
 w6, w8=.45, .55
 b3, b4=.60, .60
 
+a, b=int(input("Test N:")), float(input("LearningRate:"))
+
+
 for epoch in range(a):
   print('------------------')
   print('epoch=%d' %epoch)
