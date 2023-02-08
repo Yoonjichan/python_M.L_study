@@ -1,6 +1,6 @@
 from math import exp
 
-i1, i2 =.05, .10
+i1, i2=.05, .10
 t1, t2=.01, .99
 
 w1, w3=.15, .25
@@ -13,11 +13,10 @@ b3, b4=.60, .60
 
 a, b=int(input("Test N:")), float(input("LearningRate:"))
 
-
 for epoch in range(a):
-  print('------------------')
+  print('-------------------')
   print('epoch=%d' %epoch)
-  print('------------------')
+  print('-------------------')
 
   h1=i1*w1+i2*w2+1*b1
   h2=i1*w3+i2*w4+1*b2
